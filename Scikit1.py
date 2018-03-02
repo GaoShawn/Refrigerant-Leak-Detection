@@ -30,10 +30,7 @@ print (mlp.score(X_train,y_train))
 
 Pre=mlp.predict(X_train)
 
-trace1 = go.Scatter(
-     y = y_train.values.ravel(),
-  name = 'Test'
-)       
+trace1 = go.Scatter(y = y_train.values.ravel(),name = 'Test')       
 trace2 = go.Scatter(
      y = Pre,
   name = 'Predict'
